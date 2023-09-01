@@ -1,12 +1,11 @@
 :root {
   --blue: #19a4bf;
   --white: #f2f2f2;
-  --shadow: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
+  --shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 body {
   margin: 0;
-  min-height: 100vh;
   background-color: var(--white);
 }
 
@@ -14,7 +13,7 @@ header {
   display: flex;
   justify-content: center;
   background-color: var(--blue);
-  filter: var(--shadow);
+  box-shadow: var(--shadow);
   padding: 20px;
 }
 
@@ -37,10 +36,11 @@ h2 {
 .about-me-img {
   max-width: 600px;
   height: auto;
-  filter: var(--shadow);
+  box-shadow: var(--shadow);
 }
 
 .about-me-img img {
+  display: block;
   width: 600px;
   height: auto;
   border-radius: 5px;
@@ -52,7 +52,7 @@ h2 {
   max-width: 400px;
   height: 75%;
   background-color: var(--white);
-  filter: var(--shadow);
+  box-shadow: var(--shadow);
   padding: 15px;
 }
 
@@ -68,7 +68,7 @@ h2 {
 }
 
 .about-me-icons img:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow);
   transform: scale(1.1);
   border-radius: 50%;
 }
@@ -102,12 +102,12 @@ main {
   flex-direction: column;
   flex-basis: calc(33.33% - 40px); /* Adjust flex-basis to account for gap*/
   width: 300px;
-  min-height: 400px;
   background-color: var(--white);
-  filter: var(--shadow);
+  box-shadow: var(--shadow);
 }
 
 .project-img {
+  position: relative;
   width: 300px;
   height: 200px;
 }
@@ -158,15 +158,15 @@ main {
   transition: all 0.3s ease;
 }
 
-.project-icons img:nth-child(1):hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transform: scale(1.1);
+.github:hover {
+  box-shadow: var(--shadow);
+  transform: scale(1.2);
   border-radius: 50%;
 }
 
-.project-icons img:nth-child(2):hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transform: scale(1.1);
+.open:hover {
+  box-shadow: var(--shadow);
+  transform: scale(1.2);
 }
 
 footer {
@@ -225,7 +225,7 @@ footer {
 }
 
 .footer-main div img:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow);
   transform: scale(1.1);
   border-radius: 50%;
 }
