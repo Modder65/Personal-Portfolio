@@ -9,6 +9,26 @@ body {
   background-color: var(--white);
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--blue);
+  color: white;
+  padding: 10px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+a:focus,
+img:focus {
+  outline: 3px solid var(--blue);
+}
+
 header {
   display: flex;
   justify-content: center;
