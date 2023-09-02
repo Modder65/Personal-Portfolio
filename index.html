@@ -9,8 +9,7 @@
       content="Portfolio showcasing my web development projects"
     />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" href="./imgs/icon.svg" type="image/x-icon" />
-    <script src="./script.js"></script>
+    <link rel="icon" href="./imgs/icon.svg" type="image/svg+xml" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -18,7 +17,11 @@
     <header>
       <section class="about-me">
         <figure class="about-me-img">
-          <img src="./imgs/mountains1.jpg" alt="Mountain Landscape" />
+          <img
+            src="./imgs/mountains1.jpg"
+            alt="Mountain Landscape"
+            loading="lazy"
+          />
         </figure>
         <article class="about-me-content">
           <h1>About Me</h1>
@@ -31,12 +34,15 @@
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <nav class="about-me-icons">
+          <nav class="about-me-icons" aria-label="Social Media Links">
             <a
               href="https://github.com/Modder65?tab=repositories"
               target="_blank"
               rel="noopener noreferrer"
-              ><img src="./imgs/github-mark.svg" alt="Github Logo Icon"
+              ><img
+                src="./imgs/github-mark.svg"
+                alt="Github Logo Icon"
+                loading="lazy"
             /></a>
           </nav>
         </article>
@@ -49,7 +55,11 @@
       <section class="projects-container">
         <article class="project">
           <figure class="project-img">
-            <img src="./imgs/battleship.png" alt="Battleship Game Screenshot" />
+            <img
+              src="./imgs/battleship.png"
+              alt="Battleship Game Screenshot"
+              loading="lazy"
+            />
             <a
               href="https://modder65.github.io/Battleship/"
               target="_blank"
@@ -60,7 +70,7 @@
           <div class="project-content">
             <div class="project-header">
               <h3>BattleShip</h3>
-              <nav class="project-icons">
+              <nav class="project-icons" aria-label="Project Links">
                 <a
                   href="https://github.com/Modder65/Battleship"
                   target="_blank"
@@ -78,6 +88,7 @@
                     src="./imgs/open.svg"
                     alt="Open Project Icon"
                     class="open"
+                    loading="lazy"
                 /></a>
               </nav>
             </div>
@@ -90,7 +101,11 @@
         </article>
         <article class="project">
           <figure class="project-img">
-            <img src="./imgs/weatherapp.png" alt="Weather Website Screenshot" />
+            <img
+              src="./imgs/weatherapp.png"
+              alt="Weather Website Screenshot"
+              loading="lazy"
+            />
             <a
               href="https://modder65.github.io/Weather-App/"
               target="_blank"
@@ -101,7 +116,7 @@
           <div class="project-content">
             <div class="project-header">
               <h3>Weather App</h3>
-              <nav class="project-icons">
+              <nav class="project-icons" aria-label="Project Links">
                 <a
                   href="https://github.com/Modder65/Weather-App"
                   target="_blank"
@@ -110,6 +125,7 @@
                     src="./imgs/github-mark.svg"
                     alt="Github Logo Icon"
                     class="github"
+                    loading="lazy"
                 /></a>
                 <a
                   href="https://modder65.github.io/Weather-App/"
@@ -119,6 +135,7 @@
                     src="./imgs/open.svg"
                     alt="Open Project Icon"
                     class="open"
+                    loading="lazy"
                 /></a>
               </nav>
             </div>
@@ -131,7 +148,11 @@
         </article>
         <article class="project">
           <figure class="project-img">
-            <img src="./imgs/todolist.png" alt="Todo List Project Screenshot" />
+            <img
+              src="./imgs/todolist.png"
+              alt="Todo List Project Screenshot"
+              loading="lazy"
+            />
             <a
               href="https://modder65.github.io/Todo-List/"
               target="_blank"
@@ -142,7 +163,7 @@
           <div class="project-content">
             <div class="project-header">
               <h3>Todo List</h3>
-              <nav class="project-icons">
+              <nav class="project-icons" aria-label="Project Links">
                 <a
                   href="https://github.com/Modder65/Todo-List"
                   target="_blank"
@@ -151,6 +172,7 @@
                     src="./imgs/github-mark.svg"
                     alt="Github Logo Icon"
                     class="github"
+                    loading="lazy"
                 /></a>
                 <a
                   href="https://modder65.github.io/Todo-List/"
@@ -160,6 +182,7 @@
                     src="./imgs/open.svg"
                     alt="Open Project Icon"
                     class="open"
+                    loading="lazy"
                 /></a>
               </nav>
             </div>
@@ -175,6 +198,7 @@
             <img
               src="./imgs/pizzaplace.png"
               alt="Pizzeria Website Screenshot"
+              loading="lazy"
             />
             <a
               href="https://modder65.github.io/Restaurant-Page/"
@@ -186,7 +210,7 @@
           <div class="project-content">
             <div class="project-header">
               <h3>Pizzeria</h3>
-              <nav class="project-icons">
+              <nav class="project-icons" aria-label="Project Links">
                 <a
                   href="https://github.com/Modder65/Restaurant-Page"
                   target="_blank"
@@ -204,6 +228,7 @@
                     src="./imgs/open.svg"
                     alt="Open Project Icon"
                     class="open"
+                    loading="lazy"
                 /></a>
               </nav>
             </div>
@@ -218,6 +243,7 @@
             <img
               src="./imgs/tictactoe.png"
               alt="Tic-Tac-Toe Project Screenshot"
+              loading="lazy"
             />
             <a
               href="https://modder65.github.io/Tic-Tac-Toe/"
@@ -229,7 +255,7 @@
           <div class="project-content">
             <div class="project-header">
               <h3>Tic-Tac-Toe</h3>
-              <nav class="project-icons">
+              <nav class="project-icons" aria-label="Project Links">
                 <a
                   href="https://github.com/Modder65/Tic-Tac-Toe"
                   target="_blank"
@@ -238,6 +264,7 @@
                     src="./imgs/github-mark.svg"
                     alt="Github Logo Icon"
                     class="github"
+                    loading="lazy"
                 /></a>
                 <a
                   href="https://modder65.github.io/Tic-Tac-Toe/"
@@ -247,6 +274,7 @@
                     src="./imgs/open.svg"
                     alt="Open Project Icon"
                     class="open"
+                    loading="lazy"
                 /></a>
               </nav>
             </div>
@@ -261,6 +289,7 @@
             <img
               src="./imgs/dashboard.png"
               alt="Admin Dashboard Project Screenshot"
+              loading="lazy"
             />
             <a
               href="https://modder65.github.io/admin-dashboard/"
@@ -272,7 +301,7 @@
           <div class="project-content">
             <div class="project-header">
               <h3>Dashboard</h3>
-              <nav class="project-icons">
+              <nav class="project-icons" aria-label="Project Links">
                 <a
                   href="https://github.com/Modder65/admin-dashboard"
                   target="_blank"
@@ -281,6 +310,7 @@
                     src="./imgs/github-mark.svg"
                     alt="Github Logo Icon"
                     class="github"
+                    loading="lazy"
                 /></a>
                 <a
                   href="https://modder65.github.io/admin-dashboard/"
@@ -290,6 +320,7 @@
                     src="./imgs/open.svg"
                     alt="Open Project Icon"
                     class="open"
+                    loading="lazy"
                 /></a>
               </nav>
             </div>
@@ -306,12 +337,12 @@
         <h2>Contact Me</h2>
         <p>1234 Random Road<br />Random Town, State 12345</p>
         <div class="contact-info">
-          <div class="email">
-            <img src="./imgs/call.svg" alt="Phone Icon" />
+          <div class="phone">
+            <img src="./imgs/call.svg" alt="Phone Icon" loading="lazy" />
             <p>555-555-5555</p>
           </div>
-          <div class="phone">
-            <img src="./imgs/email.svg" alt="Email Icon" />
+          <div class="email">
+            <img src="./imgs/email.svg" alt="Email Icon" loading="lazy" />
             <p>fakeemail@fake.com</p>
           </div>
         </div>
@@ -323,10 +354,14 @@
             href="https://github.com/Modder65?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
-            ><img src="./imgs/github-mark-white.svg" alt="Github Logo Icon"
+            ><img
+              src="./imgs/github-mark-white.svg"
+              alt="Github Logo Icon"
+              loading="lazy"
           /></a>
         </div>
       </section>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
